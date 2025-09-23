@@ -1,0 +1,414 @@
+/* admin.css */
+
+/*-----------------------------------
+  GDGoC - TAE Theme
+-----------------------------------*/
+
+:root {
+  --bg-color: #1a1a1a;
+  --sidebar-bg: #242424;
+  --text-color: #e0e0e0;
+  --card-bg: #2e2e2e;
+  --primary-color: #4285F4; /* Google Blue */
+  --secondary-color: #EA4335; /* Google Red */
+  --accent-color: #FBBC05; /* Google Yellow */
+  --tertiary-color: #34A853; /* Google Green */
+  --border-color: #3e3e3e;
+  --hover-bg: #373737;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/*-----------------------------------
+  Admin Layout & Sidebar
+-----------------------------------*/
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  position: relative; /* Make the layout container the positioning context for the sidebar */
+}
+
+.admin-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  background-color: var(--sidebar-bg);
+  padding: 1.5rem 1rem;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  border-right: 1px solid var(--border-color);
+  
+  /* --- The Fix --- */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* --------------- */
+}
+
+.sidebar-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+.admin-sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: background-color 0.2s, color 0.2s;
+  position: relative;
+}
+
+.admin-sidebar a:hover,
+.admin-sidebar a.active {
+  background-color: var(--hover-bg);
+  color: var(--primary-color);
+}
+
+.notification-badge {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 9999px;
+    padding: 0.125rem 0.5rem;
+}
+
+.admin-content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 256px; /* Offset the main content to make space for the absolute sidebar */
+}
+
+.admin-main-content {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    flex-grow: 1;
+    border: 1px solid var(--border-color);
+}
+
+/*-----------------------------------
+  Login Page
+-----------------------------------*/
+.login-container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-card {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.form-group input {
+  background-color: #374151;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  color: var(--text-color);
+  padding: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-button {
+  background-color: var(--primary-color);
+  color: white;
+  transition: background-color 0.3s ease;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.login-button:hover {
+  background-color: #2563eb;
+}
+
+/*-----------------------------------
+  Admin Dashboard Styles
+-----------------------------------*/
+.admin-dashboard-container {
+  padding: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.admin-dashboard-container h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.admin-dashboard-container p {
+  color: #a0a0a0;
+}
+
+.dashboard-card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color);
+}
+
+.dashboard-links .dashboard-link {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-links .dashboard-link:hover {
+    background-color: #2563eb;
+}
+
+.messages-section {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+}
+
+.message-item {
+    background-color: #374151;
+    border: 1px solid #4b5563;
+    transition: all 0.2s ease;
+    border-radius: 0.5rem;
+}
+
+.message-item:hover {
+    background-color: #4b5563;
+}
+
+.message-item.bg-green-50 {
+    background-color: var(--tertiary-color);
+    color: white;
+}
+
+.message-item.bg-green-50 .text-gray-500,
+.message-item.bg-green-50 .text-gray-700,
+.message-item.bg-green-50 .text-gray-900 {
+  color: white;
+}
+
+/*-----------------------------------
+  Event Management Page Styles
+-----------------------------------*/
+.event-management-container {
+    padding: 2rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.event-management-container h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.add-event-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-event-button:hover {
+    background-color: #2563eb;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.events-table th,
+.events-table td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.events-table th {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.events-table tr:hover {
+    background-color: var(--hover-bg);
+}
+
+.events-table td {
+    color: var(--text-color);
+}
+
+.actions-cell {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.actions-cell button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+
+.edit-button {
+    background-color: var(--accent-color);
+    color: #374151;
+}
+
+.edit-button:hover {
+    background-color: #eab308;
+}
+
+.delete-button {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #dc2626;
+}
+
+/*-----------------------------------
+  Event Form Styles
+-----------------------------------*/
+.event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2.5rem;
+    background-color: var(--card-bg);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    border: 1px solid var(--border-color);
+}
+
+.event-form h3 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.event-form .form-message {
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+.event-form .form-input,
+.event-form .form-select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+}
+
+.event-form .form-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-form .form-button:hover {
+    background-color: #2563eb;
+}
+
+/* Back button style */
+.back-button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.back-button:hover {
+    color: #4CAF50;
+}
