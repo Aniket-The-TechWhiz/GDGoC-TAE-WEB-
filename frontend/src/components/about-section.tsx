@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { Code, Users, Globe, Lightbulb, Heart, Zap } from 'lucide-react'
-import { AboutSlideshow } from './about-slideshow'
+import { SimpleSlideshow } from './simple-slideshow'
 
 export function AboutSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -200,19 +200,20 @@ export function AboutSection() {
           </div>
         </div>
 
-        {/* Centered Image Slideshow - Below main content */}
-        <div className={`mt-16 transition-all duration-1000 delay-700 ${
+        {/* Simple Slideshow - Below main content */}
+        <div className={`mt-20 transition-all duration-1000 delay-700 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground font-google-sans mb-4">
-              Our Community in Action
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-bold text-foreground font-google-sans mb-4">
+              Our Community in
+              <span className="bg-gradient-to-r from-[#4285F4] to-[#34A853] bg-clip-text text-transparent"> Action</span>
             </h3>
             <p className="text-muted-foreground font-google-sans text-lg max-w-2xl mx-auto">
-              Explore the different ways we learn, grow, and innovate together at GDGoC-TAE
+              Discover the events and workshops that make GDGoC-TAE a vibrant learning community
             </p>
           </div>
-          <AboutSlideshow />
+          <SimpleSlideshow />
         </div>
       </div>
     </section>

@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import { ImageWithFallback } from './figma/ImageWithFallback'
+import gdgocWow2025Image from 'figma:asset/963ea0c0c5256d7a094f88a7d3120a1e2a456938.png'
+import webDevelopmentWorkshopImage from 'figma:asset/ba3d9bead6e6352893832bbd3ccc04f3bd0a8ad1.png'
+import genAIStudyJamsImage from 'figma:asset/39d738427a0242c05b70a7301873dd207d16aaf5.png'
 
 interface Slide {
   id: number
@@ -13,33 +16,45 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1540058404349-2e5fabf32d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8Y29kaW5nJTIwd29ya3Nob3AlMjBzdHVkZW50c3xlbnwxfHx8fDE3NTgzODg2NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Interactive Workshops",
-    description: "Hands-on coding sessions where students learn Google technologies through practical implementation."
+    image: "https://images.unsplash.com/photo-1453060113865-968cea1ad53a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8d2ViJTIwZGV2ZWxvcG1lbnQlMjBoYW5kcyUyMG9uJTIwd29ya3Nob3B8ZW58MXx8fHwxNzU4NzIwNzE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    title: "Web Dev Hands-on Workshop at WOW 2025",
+    description: "Interactive hands-on web development sessions during our Week of Wonders event, where students dive deep into modern web technologies."
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1560439514-0fc9d2cd5e1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8dGVjaG5vbG9neSUyMGNvbmZlcmVuY2UlMjBkZXZlbG9wZXJzfGVufDF8fHx8MTc1ODQ0MjYzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Tech Conferences",
-    description: "Exclusive access to Google developer events and conferences for continuous learning."
+    image: gdgocWow2025Image,
+    title: "GDGoC WOW 2025",
+    description: "Our signature Week of Wonders event featuring cutting-edge tech presentations and interactive sessions with industry experts."
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8cHJvZ3JhbW1pbmclMjBib290Y2FtcCUyMGNsYXNzcm9vbXxlbnwxfHx8fDE3NTg0NDI2MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Intensive Learning",
-    description: "Comprehensive bootcamp-style sessions covering everything from basics to advanced concepts."
+    image: "https://images.unsplash.com/photo-1646579885920-0c9a01cb7078?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcHAlMjBwcm9ncmFtbWluZyUyMHdvcmtzaG9wJTIwc3R1ZGVudHN8ZW58MXx8fHwxNzU4NzIwNzI0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    title: "C++ Workshop",
+    description: "Comprehensive C++ programming workshop focusing on object-oriented programming concepts and practical implementation techniques."
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1632910121591-29e2484c0259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8aGFja2F0aG9uJTIwdGVhbXdvcmslMjBjb2xsYWJvcmF0aW9ufGVufDF8fHx8MTc1ODQ0MjYzOXww&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Hackathons & Projects",
-    description: "Collaborative coding challenges where teams build innovative solutions using Google technologies."
+    image: genAIStudyJamsImage,
+    title: "GenAI Study Jams",
+    description: "Collaborative learning sessions focused on Generative AI and machine learning technologies, led by student experts and mentors."
   },
   {
     id: 5,
-    image: "https://images.unsplash.com/photo-1647514422086-18cde746fa26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8ZGV2ZWxvcGVyJTIwbWVldHVwJTIwbmV0d29ya2luZ3xlbnwxfHx8fDE3NTg0NDI2NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Community Networking",
-    description: "Connect with fellow developers, mentors, and industry professionals in our vibrant community."
+    image: webDevelopmentWorkshopImage,
+    title: "Web Development Workshop",
+    description: "Hands-on web development sessions where students learn modern frameworks and technologies in our state-of-the-art computer labs."
+  },
+  {
+    id: 6,
+    image: gdgocWow2025Image,
+    title: "GDGoC WOW 2025 - Day 2",
+    description: "Second day highlights from our Week of Wonders event showcasing advanced workshops and networking sessions."
+  },
+  {
+    id: 7,
+    image: webDevelopmentWorkshopImage,
+    title: "Advanced Web Development",
+    description: "Advanced web development techniques and best practices session, covering modern frameworks and deployment strategies."
   }
 ]
 

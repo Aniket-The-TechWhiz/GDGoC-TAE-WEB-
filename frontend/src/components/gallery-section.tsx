@@ -74,7 +74,7 @@ export function GallerySection() {
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1540058404349-2e5fabf32d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9ncmFtbWluZyUyMGJvb3RjYW1wJTIwc3R1ZGVudHMlMjBsZWFybmluZ3xlbnwxfHx8fDE3NTg1NDU3ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: "https://images.unsplash.com/photo-1540058404349-2e5fabf32d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9ncmFtbWluZ3xlbnwxfHx8fDE3NTg1NDU3ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       title: "Mobile & Web Dev",
       type: "development",
       gridArea: "mid-center",
@@ -83,7 +83,7 @@ export function GallerySection() {
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1559146820-a75deba24b58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwdGFsayUyMHNwZWFrZXIlMjBhdWRpZW5jZXxlbnwxfHx8fDE3NTg1NDU3OTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: "https://images.unsplash.com/photo-1559146820-a75deba24b58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWVsZXZlbnRzJTIwc3BlYWtlciUyMGF1ZGllbmNlfGVufDF8fHx8MTc1ODU0NTc5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       title: "Speaker Session",
       type: "talk",
       gridArea: "mid-right",
@@ -93,7 +93,7 @@ export function GallerySection() {
     // BOTTOM ROW
     {
       id: 7,
-      src: "https://images.unsplash.com/photo-1630442923896-244dd3717b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBjb21wZXRpdGlvbiUyMGRldmVsb3BlcnMlMjBsYXB0b3BzfGVufDF8fHx8MTc1ODU0NTc5OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: "https://images.unsplash.com/photo-1630442923896-244dd3717b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXN1YWwlMjBjb2RpbmclMjBjb21wZXRpdGlvbiUyMGRldmVsb3BlcnMlMjBsYXB0b3BzfGVufDF8fHx8MTc1ODU0NTc5OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       title: "Community Gathering",
       type: "community",
       gridArea: "bottom-left",
@@ -102,7 +102,7 @@ export function GallerySection() {
     },
     {
       id: 8,
-      src: "https://images.unsplash.com/photo-1543295523-78c9bbdba65c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkeSUyMGdyb3VwJTIwcHJvZ3JhbW1pbmclMjBzZXNzaW9ufGVufDF8fHx8MTc1ODU0NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: "https://images.unsplash.com/photo-1543295523-78c9bbdba65c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXNzaW9uJTIwd29ya3Nob3AlMjBzdHVkeSUyMGdyb3VwJTIwcHJvZ3JhbW1pbmclMjB3aXRoJTIwbGFwdG9wcyUyMHNhbGUlMjBzZXNzaW9ufGVufDF8fHx8MTc1ODU0NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       title: "Adversity Workshop",
       type: "workshop",
       gridArea: "bottom-center",
@@ -110,8 +110,6 @@ export function GallerySection() {
       icon: Calendar
     }
   ]
-
-
 
   return (
     <section id="gallery" ref={sectionRef} className="py-20 lg:py-32 relative overflow-hidden">

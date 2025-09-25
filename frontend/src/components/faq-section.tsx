@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { Plus, Minus, HelpCircle } from 'lucide-react'
+import { Plus, Minus, HelpCircle, Linkedin } from 'lucide-react'
 
 export function FAQSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -150,8 +150,12 @@ export function FAQSection() {
               <button className="bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367D6] hover:to-[#2E7D32] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans">
                 Contact Us
               </button>
-              <button className="border-2 border-[#4285F4] text-[#4285F4] hover:bg-[#4285F4] hover:text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 font-google-sans">
-                Join Discord
+              <button
+                onClick={() => window.open('https://linkedin.com/in/mayur', '_blank', 'noopener,noreferrer')}
+                className="border-2 border-[#0077B5] text-[#0077B5] hover:bg-[#0077B5] hover:text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 font-google-sans flex items-center justify-center space-x-2"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span>LinkedIn</span>
               </button>
             </div>
           </div>

@@ -116,6 +116,13 @@ export function EventsSection() {
     })
   }
 
+  const handleProposeEventClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="events" ref={sectionRef} className="py-20 lg:py-32 relative overflow-hidden">
       
@@ -300,7 +307,10 @@ export function EventsSection() {
               Have an idea for a workshop or want to organize a study jam? 
               Let's make it happen together!
             </p>
-            <button className="bg-gradient-to-r from-[#FBBC05] to-[#EA4335] hover:from-[#F9AB00] hover:to-[#D23E30] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans">
+            <button
+              onClick={handleProposeEventClick}
+              className="bg-gradient-to-r from-[#FBBC05] to-[#EA4335] hover:from-[#F9AB00] hover:to-[#D23E30] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans"
+            >
               Propose an Event
             </button>
           </div>
