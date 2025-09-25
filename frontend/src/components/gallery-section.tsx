@@ -2,6 +2,13 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { ImageWithFallback } from "./figma/ImageWithFallback"
+import ipic from '@/assets/galleryimg/1pic.jpg'
+import pic2 from '@/assets/galleryimg/2pic.jpg'
+import pic3 from '@/assets/galleryimg/3pic.jpg'
+import pic4 from '@/assets/galleryimg/4pic.jpg'
+import pic5 from '@/assets/galleryimg/5pic.jpg'
+import pic6 from '@/assets/galleryimg/6pic.jpg'
+import pic7 from '@/assets/galleryimg/7pic.jpg'
 import { Camera, Play, Users, Code, Calendar } from 'lucide-react'
 
 export function GallerySection() {
@@ -37,7 +44,7 @@ export function GallerySection() {
     // TOP ROW
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1695066964145-245927509533?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwd29ya3Nob3AlMjBzdHVkZW50cyUyMGNvZGluZ3xlbnwxfHx8fDE3NTg1NDU3NjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: ipic,
       title: "WOW Conference 2024",
       type: "conference",
       gridArea: "top-left",
@@ -46,7 +53,7 @@ export function GallerySection() {
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1670382417551-d2f1ee29aea4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBjb25mZXJlbmNlJTIwcHJlc2VudGF0aW9ufGVufDF8fHx8MTc1ODU0NTc2NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: pic2,
       title: "Tech Opportunities",
       type: "presentation",
       gridArea: "top-center",
@@ -55,7 +62,7 @@ export function GallerySection() {
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1637073849667-91120a924221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYWNrYXRob24lMjB0ZWFtJTIwY29sbGFib3JhdGlvbiUyMGNvZGluZ3xlbnwxfHx8fDE3NTg0MjkzNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: pic3,
       title: "Empowerment Talk",
       type: "workshop",
       gridArea: "top-right",
@@ -65,7 +72,7 @@ export function GallerySection() {
     // MIDDLE ROW
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1694158143801-1f21643a0b61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXR3b3JraW5nJTIwdGVjaCUyMG1lZXR1cCUyMHBlb3BsZXxlbnwxfHx8fDE3NTg1NDU3ODF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: pic4,
       title: "WOW Pune Networking",
       type: "networking",
       gridArea: "mid-left",
@@ -74,7 +81,7 @@ export function GallerySection() {
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1540058404349-2e5fabf32d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9ncmFtbWluZ3xlbnwxfHx8fDE3NTg1NDU3ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: pic5,
       title: "Mobile & Web Dev",
       type: "development",
       gridArea: "mid-center",
@@ -83,7 +90,7 @@ export function GallerySection() {
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1559146820-a75deba24b58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWVsZXZlbnRzJTIwc3BlYWtlciUyMGF1ZGllbmNlfGVufDF8fHx8MTc1ODU0NTc5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: pic6,
       title: "Speaker Session",
       type: "talk",
       gridArea: "mid-right",
@@ -93,7 +100,7 @@ export function GallerySection() {
     // BOTTOM ROW
     {
       id: 7,
-      src: "https://images.unsplash.com/photo-1630442923896-244dd3717b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXN1YWwlMjBjb2RpbmclMjBjb21wZXRpdGlvbiUyMGRldmVsb3BlcnMlMjBsYXB0b3BzfGVufDF8fHx8MTc1ODU0NTc5OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: pic7,
       title: "Community Gathering",
       type: "community",
       gridArea: "bottom-left",
@@ -102,7 +109,7 @@ export function GallerySection() {
     },
     {
       id: 8,
-      src: "https://images.unsplash.com/photo-1543295523-78c9bbdba65c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXNzaW9uJTIwd29ya3Nob3AlMjBzdHVkeSUyMGdyb3VwJTIwcHJvZ3JhbW1pbmclMjB3aXRoJTIwbGFwdG9wcyUyMHNhbGUlMjBzZXNzaW9ufGVufDF8fHx8MTc1ODU0NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      src: ipic,
       title: "Adversity Workshop",
       type: "workshop",
       gridArea: "bottom-center",

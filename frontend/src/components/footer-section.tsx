@@ -12,10 +12,10 @@ export function FooterSection() {
   ]
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', color: '#0077B5', name: 'LinkedIn' },
-    { icon: Instagram, href: '#', color: '#E4405F', name: 'Instagram' },
-    { icon: MessageCircle, href: '#', color: '#25D366', name: 'WhatsApp' },
-    { icon: Twitter, href: '#', color: '#1DA1F2', name: 'Twitter' }
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/gdsc-tae/', color: '#0077B5', name: 'LinkedIn' },
+    { icon: Instagram, href: 'https://www.instagram.com/gdgoc_tae/', color: '#E4405F', name: 'Instagram' },
+    { icon: MessageCircle, href: 'https://chat.whatsapp.com/Hy5cXWkn5fa1f5xUwaowh0', color: '#25D366', name: 'WhatsApp' },
+    { icon: Twitter, href: 'https://x.com/gdgoc_tae', color: '#1DA1F2', name: 'Twitter' }
   ]
 
   return (

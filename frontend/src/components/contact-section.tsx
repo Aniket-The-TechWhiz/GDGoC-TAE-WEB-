@@ -91,28 +91,28 @@ export function ContactSection() {
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/company/gdsc-tae/",
       color: "#0077B5",
       description: "Connect with us professionally"
     },
     {
       icon: Instagram,
       name: "Instagram",
-      url: "#",
+      url: "https://www.instagram.com/gdgoc_tae/",
       color: "#E4405F",
       description: "Follow our journey"
     },
     {
       icon: MessageCircle,
       name: "WhatsApp",
-      url: "#",
+      url: "https://chat.whatsapp.com/Hy5cXWkn5fa1f5xUwaowh0",
       color: "#25D366",
       description: "Chat with us directly"
     },
     {
       icon: Twitter,
       name: "Twitter",
-      url: "#",
+      url: "https://x.com/gdgoc_tae",
       color: "#1DA1F2",
       description: "Get the latest updates"
     }

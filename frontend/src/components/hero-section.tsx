@@ -19,7 +19,7 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden flex items-center pt-4 sm:pt-12 mt-[50px] sm:mt-[60px]">
+    <section id="home" className="min-h-screen relative overflow-hidden flex items-center pt-24 sm:pt-28">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         

@@ -44,7 +44,7 @@ export function SimpleSlideshow() {
   return (
     <div className="relative w-full max-w-6xl mx-auto">
       {/* Main slideshow container - pure focus on images */}
-      <div className="relative h-[500px] md:h-[650px] lg:h-[750px] flex items-center justify-center">
+      <div className="relative h-[500px] md:h-[647px] lg:h-[745px] flex items-center justify-center">
         {images.map((image, index) => (
           <div
             key={index}
