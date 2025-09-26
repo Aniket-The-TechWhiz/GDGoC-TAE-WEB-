@@ -303,11 +303,6 @@ export function GallerySection() {
                   <span>Explore Upcoming Events</span>
                   <Calendar className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
                 </button>
-                
-                <button className="border-2 border-[#4285F4] text-[#4285F4] hover:bg-[#4285F4] hover:text-white px-6 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 font-google-sans flex items-center space-x-2">
-                  <Camera className="w-4 h-4" />
-                  <span>View All Photos</span>
-                </button>
               </div>
             </div>
           </div>

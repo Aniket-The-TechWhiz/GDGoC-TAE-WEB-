@@ -56,6 +56,13 @@ export function FAQSection() {
     }
   ]
 
+  const handleContactClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="faq" ref={sectionRef} className="py-20 lg:py-32 relative overflow-hidden">
       
@@ -147,7 +154,10 @@ export function FAQSection() {
               you might have about GDGoC-TAE.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367D6] hover:to-[#2E7D32] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans">
+              <button
+                onClick={handleContactClick}
+                className="bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367D6] hover:to-[#2E7D32] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans"
+              >
                 Contact Us
               </button>
               <button

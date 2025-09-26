@@ -82,7 +82,7 @@ export function ContactSection() {
       title: "Visit Us",
       description: "Trinity Academy of Engineering",
       value: "Pune, Maharashtra, India",
-      link: "https://maps.google.com",
+      link: "https://www.google.com/maps/place/Trinity+Academy+of+Engineering/@18.4207309,73.9030732,17.55z/data=!4m14!1m7!3m6!1s0x3bc2c058396c3aa3:0xda785dfcd808849f!2sTrinity+Academy+of+Engineering!8m2!3d18.420721!4d73.9048223!16s%2Fg%2F11g6nky23n!3m5!1s0x3bc2c058396c3aa3:0xda785dfcd808849f!8m2!3d18.420721!4d73.9048223!16s%2Fg%2F11g6nky23n?entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D",
       color: "#4285F4"
     }
   ]

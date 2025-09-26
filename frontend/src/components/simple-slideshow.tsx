@@ -44,12 +44,15 @@ export function SimpleSlideshow() {
   return (
     <div className="relative w-full max-w-6xl mx-auto">
       {/* Main slideshow container - pure focus on images */}
-      <div className="relative h-[500px] md:h-[647px] lg:h-[745px] flex items-center justify-center">
-        {images.map((image, index) => (
+      <div className="relative h-[500px] md:h-[647px] lg:h-[745px] overflow-hidden">
+        {images.map((image, index) => {
+          return (
           <div
             key={index}
             className={`absolute inset-0 transition-all duration-1000 ease-in-out flex items-center justify-center ${
-              index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+              index === currentSlide
+                ? 'opacity-100 scale-100'  // Active slide
+                : 'opacity-0 scale-90'     // Inactive slides are scaled down and invisible
             }`}
           >
             <img
@@ -62,23 +65,8 @@ export function SimpleSlideshow() {
               }}
             />
           </div>
-        ))}
-      </div>
-      
-      {/* Minimal navigation dots */}
-      <div className="flex justify-center mt-8 space-x-3">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 border-0 ${
-              index === currentSlide
-                ? 'bg-[#4285F4] scale-125'
-                : 'bg-muted-foreground/40 hover:bg-muted-foreground/60'
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
+          );
+        })}
       </div>
     </div>
   )

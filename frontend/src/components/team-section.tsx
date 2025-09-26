@@ -40,7 +40,7 @@ export function TeamSection() {
       id: 2,
       name: "Sanchit Kumbhar",
       role: "Technical Lead",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHN0dWRlbnR8ZW58MHx8fHwxNzU4Mjk0MzU1fDA&ixlib=rb-4.1.0&q=80&w=300",
+      image: mayurImage,
       linkedin: "https://www.linkedin.com/in/sanchit-kumbhar-85b44a289/"
     },
     {
@@ -65,7 +65,7 @@ export function TeamSection() {
       id: 5,
       name: "Aniket Yelameli",
       role: "Backend Developer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYW4lMjBzdHVkZW50JTIwaW5kaWFufGVufDB8fHx8MTc1ODI5NDM1NXww&ixlib=rb-4.1.0&q=80&w=300",
+      image: mayurImage,
       linkedin: "https://www.linkedin.com/in/aniket-yelameli/"
     },
     {
@@ -116,7 +116,7 @@ export function TeamSection() {
     {
       id: 9,
       name: "Aryan Raina",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYW4lMjBzdHVkZW50fGVufDB8fHx8MTc1ODI5NDM1NXww&ixlib=rb-4.1.0&q=80&w=300",
+      image: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NTg1NDU3NjV8MA&ixlib=rb-4.1.0&q=80&w=300",
       linkedin: "https://www.linkedin.com/in/aryan-raina-041570322/"
     },
     {
@@ -530,28 +530,6 @@ export function TeamSection() {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div
-          className={`text-center transition-all duration-1000 delay-800 ${
-            isVisible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-10"
-          }`}
-        >
-          <div className="bg-gradient-to-r from-[#4285F4]/5 via-[#EA4335]/5 to-[#34A853]/5 border border-border rounded-3xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-foreground mb-4 font-google-sans">
-              Want to Join Our Team?
-            </h3>
-            <p className="text-muted-foreground mb-6 font-google-sans">
-              We're always looking for passionate students who
-              want to contribute to the tech community at
-              Trinity Academy of Engineering.
-            </p>
-            <button className="bg-gradient-to-r from-[#34A853] to-[#4285F4] hover:from-[#2E7D32] hover:to-[#3367D6] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans">
-              Apply Now
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );

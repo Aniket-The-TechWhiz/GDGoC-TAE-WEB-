@@ -6,8 +6,8 @@ import gdgLogo from '@/assets/gdg-logo.png'
 
 export function FooterSection() {
   const quickLinks = [
-    { name: 'About GDG Program', href: 'https://developers.google.com/community/gdg' },
-    { name: 'Community Guidelines', href: '#' },
+    { name: 'About GDG Program', href: 'https://developers.google.com/community' },
+    { name: 'Community Guidelines', href: 'https://www.google.com/events/policy/anti-harassmentpolicy.html' },
     { name: 'FAQ', href: '#faq' }
   ]
 

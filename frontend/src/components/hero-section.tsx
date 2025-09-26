@@ -19,7 +19,11 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden flex items-center pt-24 sm:pt-28">
+    <section
+      id="home"
+      className="min-h-screen relative overflow-hidden flex items-center"
+      style={{ paddingTop: '4rem' }} // Increased top margin
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         
@@ -188,9 +192,11 @@ export function HeroSection() {
           <div className={`flex flex-col sm:flex-row gap-4 sm:gap-6 px-4 sm:px-0 transition-all duration-1000 delay-600 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <button className="group bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367D6] hover:to-[#2E7D32] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans flex items-center justify-center space-x-3 text-sm w-full sm:w-auto">
-              <span>Register Now</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+            <button
+              onClick={() => window.open('https://gdg.community.dev/gdg-on-campus-trinity-academy-of-engineering-pune-india/', '_blank', 'noopener,noreferrer')}
+              className="group bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367D6] hover:to-[#2E7D32] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans flex items-center justify-center text-sm w-full sm:w-auto"
+            >
+              <span>Join Our Community</span>
             </button>
             
             <button

@@ -57,7 +57,7 @@ export function AboutSection() {
   ]
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 lg:py-32 relative overflow-hidden">
+    <section id="about" ref={sectionRef} className="pt-20 pb-10 lg:pt-32 lg:pb-16 relative overflow-hidden">
       
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -123,7 +123,12 @@ export function AboutSection() {
               ))}
             </div>
             
-            <button className="bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367D6] hover:to-[#2E7D32] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans">
+            <button
+              onClick={() =>
+                window.open('https://gdg.community.dev/gdg-on-campus-trinity-academy-of-engineering-pune-india/', '_blank', 'noopener,noreferrer')
+              }
+              className="bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367D6] hover:to-[#2E7D32] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-google-sans"
+            >
               Join Our Community
             </button>
           </div>
